@@ -103,8 +103,21 @@ button {
     color: #77736b;
 }
 
+.today-plan .plan-day {
+    color: #b95b50;
+}
+
+.today-plan .plan-day::after {  /*  :: 擬似要素 後ろに文字や飾りを追加できる */
+    content: " ⚫︎ 今日";
+    font-weight: bold;
+}
+
 .plan-row input {
     width: 22px;
     height: 22px;
     accent-color: #687c65;
+}
+
+.today-plan input {
+    accent-color: #b95b50;
 }
