@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>今日の予定</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>今日の予定</h1>
+        <p id="today"></p>
+        <input type="text" id="plan" placeholder="予定を入力">   <!-- input type = "text"は丸暗記で -->
+
+    <div class="date-row">  
+        <input type="date" id="plan-date">  <!-- カレンダーを用意 -->
+        <button id="save-button">保存</button>
+    </div>
+
+    <div class="tab-row">
+        <button id="active-button">やること</button>
+        <button id="completed-button">やったこと</button>
+    </div>
+
+        <div id="saved-plan"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    background-color: #faf8f0;
+    color: #45443b;
+    font-size: 18px;
+    font-family: "Hiragino Maru Gothic ProN", sans-serif;
+    padding: 20px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#today {
+    text-align: center;
+}
+
+#plan,#plan-date {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #d8d3c7;
+    border-radius: 8px;
+}
+
+#plan {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+#save-button {
+    background-color: #b95b50;
+    color: white;
+}
+
+#active-button, #completed-button {
+    background-color: #b9c7b3;
+    color: #354632;
+}
+
+#saved-plan button {
+    background-color: #fffdf8;
+    color: #45443b;
+    border: 1px solid #d8d3c7;
+}
+
+#saved-plan {
+    white-space: pre-line;
+    margin-top: 20px;
+}
+
+.date-row, .tab-row {
+    margin-top: 12px;
+}
+
+.date-row {
+    display: flex;
+    gap: 10px;
+}
+
+#plan-date {
+    flex: 1;
+}
+
+.tab-row {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-row button {
+    flex: 1;
+}
+
+#active-button.selected, #completed-button.selected {
+    background-color: #687c65;
+    color: white;
+}
+
+.plan-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ded9cc;
+}
+
+.plan-content {
+    flex: 1;
+}
+
+.plan-day {
+    font-size: 14px;
+    color: #77736b;
+}
+
+.plan-row input {
+    width: 22px;
+    height: 22px;
+    accent-color: #687c65;
+}
