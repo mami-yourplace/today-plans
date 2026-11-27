@@ -1,5 +1,10 @@
 const today = new Date();
 
+const todayDate = today.getFullYear() + "-" +
+    String(today.getMonth() + 1).padStart(2, "0") + "-" +
+    String(today.getDate()).padStart(2, "0");
+    console.log(todayDate);
+
 document.getElementById("today").textContent =
     today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日";
 
@@ -76,6 +81,9 @@ for (const item of plans) {
 
     const row = document.createElement("div");  // row は変数名 <div> は文字やボタンなどをまとめるために使う要素
     row.className = "plan-row";
+    if (item.date == todayDate) {
+        row.classList.add("today-plan");
+    }
 
     const content = document.createElement("div");
     content.className = "plan-content";
